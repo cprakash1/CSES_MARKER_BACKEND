@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const db = process.env.Db_Url;
-
+// console.log(db);
 mongoose
   .connect(db, {})
   .then(() => {
